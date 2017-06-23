@@ -23,7 +23,7 @@ define([
     var model = Sitecore.Definitions.Models.ControlModel.extend({
         initialize: function () {
             this._super();
-
+            
             var params = Sitecore.Helpers.url.getQueryParameters(window.location.href);
             var device = params.deviceId;
 
