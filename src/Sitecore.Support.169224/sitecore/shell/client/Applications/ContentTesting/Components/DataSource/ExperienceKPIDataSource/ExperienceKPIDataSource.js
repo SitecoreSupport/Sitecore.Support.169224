@@ -61,7 +61,9 @@
 
 // Sitecore Support 169224           
 		   var uri = this.composeUri();
-			//var uri = dataUtil.composeUri(this);
+		   if (!uri) {
+		       uri = dataUtil.composeUri(this);
+		   }
 // Sitecore Support 169224
             if (!uri) {
                 return;
